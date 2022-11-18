@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lab Fat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="registration_form">
+        <div class="title">Secure Web Login Form</div>
+
+        <form
+          action="/myaction.php"
+          name="myForm"
+          onsubmit="return validateForm()"
+        >
+          <div class="form_wrap">
+            <div class="input_wrap">
+              <label for="email">Email Address</label>
+              <input type="text" id="email" required />
+            </div>
+            <div class="input_wrap">
+              <label for="password">Password</label>
+              <input type="password" id="password" required />
+            </div>
+            <div class="input_wrap">
+              <input type="submit" value="Login" class="submit_btn" />
+            </div>
+            <div class="input_wrap" style="text-align: center">
+              <button onclick="">
+                <a href="registration.html">Don't have an account? Register Now</a
+                >
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="login.js"></script>
+</html>
